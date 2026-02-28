@@ -138,24 +138,30 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+  
+  schoolName: "Flinders University, Australia",
+  logo: require("./assets/images/flinders.png"),
+  subHeader: "Master of Science",
+  duration: "2022 - 2024",
+  desc: "Forecasting Geophysical Hazards Using Machine Learning.",
+  descBullets: [
+    "Applied LSTM and Random Forest models to VLF signal data for seismic event forecasting",
+    "Performed data preprocessing, feature engineering, and model evaluation using Python",
+    "Visualized trends and model outputs using Matplotlib and Seaborn to support interpretation"
+  ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
+  schoolName: "National College of Engineering, Lalitpur, Nepal",
+  logo: require("./assets/images/nce.png"),
+  subHeader: "Bachelor of Engineering",
+  duration: "2011 - 2018",
+  desc: "IoT-Based Water Level Detection System.",
+  descBullets: [
+    "Engineered a real-time alert system using ultrasonic sensors and GSM modules",
+    "Programmed microcontrollers in C for automation and wireless signal transmission",
+    "Designed a scalable monitoring solution suitable for both household and industrial applications"
+  ]
+}
   ]
 };
 
@@ -169,31 +175,36 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+    
+      {
+  role: "Data Analytics Virtual Experience Participant",
+  company: "Commonwealth Bank (Forage)",
+  companylogo: require("./assets/images/commBank.png"),
+  date: "February 2026",
+  desc: "Completed Commonwealth Bank job simulation focused on data analytics and business insights.",
+  descBullets: [
+    "Analyzed home mortgage datasets in Excel to identify potential target customers for CommBank’s Green Loan program",
+  "Applied filtering, sorting, and segmentation techniques to evaluate borrowers based on LTV ratios, income levels, property values, and demographic indicators",
+  "Identified and quantified qualified sales leads by comparing multiple eligibility criteria combinations",
+  "Created data visualizations and charts in Excel to highlight trends, patterns, and high-potential customer segments",
+  "Developed a concise 5–7 slide PowerPoint presentation communicating key insights, risks, and business recommendations",
+  "Provided transparent commentary on data limitations and quality considerations to support confident decision-making"
+  ]
+
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
+  role: "Data Analytics & Forensic Technology Virtual Experience Participant",
+  company: "Deloitte (Forage)",
+  companylogo: require("./assets/images/deloitte.png"),
+  date: "February 2026",
+  desc: "Completed Deloitte job simulation focused on data analytics and forensic technology applications.",
+  descBullets: [
+    "Analyzed structured datasets using Excel to classify data and extract meaningful business insights",
+    "Designed and developed an interactive dashboard in Tableau to visualize key performance indicators",
+    "Interpreted analytical findings to support client-focused decision making",
+    "Applied data storytelling techniques to communicate insights clearly and effectively"
+  ]
+},
   ]
 };
 
@@ -235,7 +246,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -247,54 +258,32 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
+  {
+    title: "Commonwealth Bank – Data Analytics Virtual Experience",
+    subtitle:
+      "Completed CommBank Green Loan data analysis simulation, identifying qualified customer segments using Excel and presenting insights via PowerPoint.",
+    image: require("./assets/images/comm_bank_logo.png"),
+    imageAlt: "Commonwealth Bank Logo",
+    footerLink: [
+      {
+        name: "View Certificate",
+        url: "https://drive.google.com/file/d/1-RHJnomhJrcRtZmYp8C8ScCBpLsAw3Ge/view?usp=drive_link"
+      }
+    ]
+  },
+  {
+    title: "Deloitte – Data Analytics & Forensic Technology Simulation",
+    subtitle:
+      "Completed Deloitte job simulation involving Excel-based data classification and Tableau dashboard development for client-focused analysis.",
+    image: require("./assets/images/deloitte_logo.png"),
+    imageAlt: "Deloitte Logo",
+    footerLink: [
+      {
+        name: "View Certificate",
+        url: "https://drive.google.com/file/d/114YBD6CsBJsRTlS70_fbpSLTJsKTg5u3/view?usp=drive_link"
+      }
+    ]
+  }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -320,7 +309,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false// Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -339,7 +328,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -352,7 +341,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -376,10 +365,10 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
