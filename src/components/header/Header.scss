@@ -82,7 +82,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 10px;
+  padding: 28px 20px;
   position: relative;
   user-select: none;
 }
@@ -167,17 +167,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-   padding: 10px 20px;
+   
   }
-  .header .logo {
-    margin-top: 0;           // remove extra margin
-    font-size: 1.3em;        // optional: smaller for mobile
-  }
-  .header .menu-icon {
-    float: none;             // remove float
-    padding: 0;              // remove big top padding
-  }
-
   .header .menu {
     max-height: none;
   }
@@ -188,5 +179,35 @@
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;
+  }
+}
+
+
+// for mobile
+/* Mobile view: below 768px */
+@media (max-width: 767px) {
+  .header {
+    display: flex;
+    align-items: center;     /* vertically center logo + menu icon */
+    justify-content: space-between;
+  }
+
+  .header .logo {
+    float: none;            /* remove float */
+    margin-top: 0;          /* remove extra spacing */
+  }
+
+  .header .menu-icon {
+    float: none;            /* remove float */
+    padding: 0;             /* clean spacing */
+    display: inline-flex; 
+    align-items: center;    /* vertical align hamburger lines */
+    justify-content: center;
+    height: 40px;           /* match header height */
+  }
+
+  .header .logo-name {
+    line-height: 1;         /* ensures vertical alignment with menu icon */
+    padding: 0 10px;        /* horizontal spacing */
   }
 }
