@@ -159,7 +159,7 @@
 
 /* 48em = 768px */
 
-@media (min-width: 50em) {
+@media (min-width: 32em) {
   .header li {
     float: left;
   }
@@ -167,6 +167,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
   }
   .header .menu {
     max-height: none;
