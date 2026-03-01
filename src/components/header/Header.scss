@@ -82,7 +82,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 28px 10px;
   position: relative;
   user-select: none;
 }
@@ -159,7 +159,7 @@
 
 /* 48em = 768px */
 
-@media (min-width: 32em) {
+@media (min-width: 48em) {
   .header li {
     float: left;
   }
@@ -167,8 +167,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+   padding: 10px 20px;
   }
+  .header .logo {
+    margin-top: 0;           // remove extra margin
+    font-size: 1.3em;        // optional: smaller for mobile
+  }
+  .header .menu-icon {
+    float: none;             // remove float
+    padding: 0;              // remove big top padding
+  }
+
   .header .menu {
     max-height: none;
   }
