@@ -184,20 +184,26 @@
 }
 
 @media (max-width: 48em) {
-  .header .logo,
-  .header .menu-icon {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-  }
 
+  /* Reduce header side padding */
   .header {
-    text-align: justify;
+    padding: 15px 10px;
   }
 
-  .header:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
+  /* Make logo smaller so it fits */
+  .header .logo {
+    font-size: 1.1em;   /* was 1.5em */
+    margin-top: 0;      /* remove extra vertical space */
   }
+
+  /* Reduce spacing inside logo text */
+  .header .logo-name {
+    padding: 0 5px;
+  }
+
+  /* Reduce burger horizontal padding */
+  .header .menu-icon {
+    padding: 20px 10px;  /* was 28px 20px */
+  }
+
 }
