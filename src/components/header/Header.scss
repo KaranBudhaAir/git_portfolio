@@ -184,12 +184,20 @@
 }
 
 @media (max-width: 48em) {
-  .header .logo {
-    margin-top: 0;
-    line-height: 1;
+  .header .logo,
+  .header .menu-icon {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
   }
 
-  .header .menu-icon {
-    padding: 18px 20px;
+  .header {
+    text-align: justify;
+  }
+
+  .header:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
   }
 }
